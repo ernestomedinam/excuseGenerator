@@ -1,0 +1,12 @@
+let setUp=document.getElementById("setUp");
+let excuse=document.getElementById("excuse");
+let who = ["my teacher", "my mother", "my sister", "my brother", "my father", "my kid", "my boss", "a friend of mine", "a stranger"];
+let what = ["burned my bed", "shot my cat", "ate my food", "took my money", "punched my face", "won the lottery", "brought me some food", "finally killed Maduro"];
+let when = ["last night", "this morning", "yesterday", "a while ago"];
+let reason = ["shocking", "beautiful", "ridiculous", "funny", "lame", "amazing", "hurtful", "crazy", "punk"];
+let action = ["fell asleep", "puked my guts out", "laughed 'till I got ill", "lost consciousness", "blacked out", "have been daydreaming ever since"];
+let setUpText = ["I know you probably won't buy this, but", "I thought stuff like this only happened in movies, but", "I realize it's now been a couple of times that I've let you down, but", "You know I was so much into going this time, but"]
+let backgroundColor = ["#58167D", "#C54832", "#F8B50C", "#2A5C81"]
+document.body.style.backgroundColor = backgroundColor[Math.floor(Math.random()*4)];
+setUp.innerHTML = setUpText[Math.floor(Math.random()*4)];
+excuse.innerHTML = who[Math.floor(Math.random()*who.length)] + " " + what[Math.floor(Math.random()*what.length)] + " " + when[Math.floor(Math.random()*when.length)] +" and it was so " + reason[Math.floor(Math.random()*reason.length)] + " I " + action[Math.floor(Math.random()*action.length)] + " and couldn't make it to your thing on time!";
